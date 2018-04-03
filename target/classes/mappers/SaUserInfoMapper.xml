@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myproject.datasource.dao.SaUserInfoMapper">
+	<resultMap id="BaseResultMap" type="com.myproject.datasource.domain.SaUserInfo">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="account" jdbcType="VARCHAR" property="account" />
+		<result column="password" jdbcType="VARCHAR" property="password" />
+		<result column="description" jdbcType="VARCHAR" property="description" />
+		<result column="userName" jdbcType="VARCHAR" property="userName" />
+		<result column="status" jdbcType="VARCHAR" property="status" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		id, account, password, description, userName, status
+	</sql>
+	<select id="selectByPrimaryKey" parameterType="java.lang.Integer"
+		resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from SA_USER_INFO
+		where id = #{id,jdbcType=INTEGER}
+	</select>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from SA_USER_INFO
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+	<insert id="insert" parameterType="com.myproject.datasource.domain.SaUserInfo">
+		insert into SA_USER_INFO (id, account, password,
+		description, userName, status
+		)
+		values (#{id,jdbcType=INTEGER}, #{account,jdbcType=VARCHAR},
+		#{password,jdbcType=VARCHAR},
+		#{description,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}
+		)
+	</insert>
+	<insert id="insertSelective" parameterType="com.myproject.datasource.domain.SaUserInfo">
+		insert into SA_USER_INFO
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				id,
+			</if>
+			<if test="account != null">
+				account,
+			</if>
+			<if test="password != null">
+				password,
+			</if>
+			<if test="description != null">
+				description,
+			</if>
+			<if test="userName != null">
+				userName,
+			</if>
+			<if test="status != null">
+				status,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="account != null">
+				#{account,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null">
+				#{password,jdbcType=VARCHAR},
+			</if>
+			<if test="description != null">
+				#{description,jdbcType=VARCHAR},
+			</if>
+			<if test="userName != null">
+				#{userName,jdbcType=VARCHAR},
+			</if>
+			<if test="status != null">
+				#{status,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	<update id="updateByPrimaryKeySelective" parameterType="com.myproject.datasource.domain.SaUserInfo">
+		update SA_USER_INFO
+		<set>
+			<if test="account != null">
+				account = #{account,jdbcType=VARCHAR},
+			</if>
+			<if test="password != null">
+				password = #{password,jdbcType=VARCHAR},
+			</if>
+			<if test="description != null">
+				description = #{description,jdbcType=VARCHAR},
+			</if>
+			<if test="userName != null">
+				userName = #{userName,jdbcType=VARCHAR},
+			</if>
+			<if test="status != null">
+				status = #{status,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="com.myproject.datasource.domain.SaUserInfo">
+		update SA_USER_INFO
+		set account = #{account,jdbcType=VARCHAR},
+		password = #{password,jdbcType=VARCHAR},
+		description = #{description,jdbcType=VARCHAR},
+		userName = #{userName,jdbcType=VARCHAR},
+		status = #{status,jdbcType=VARCHAR}
+		where id = #{id,jdbcType=INTEGER}
+	</update>
+	<select id="login" parameterType="com.myproject.datasource.domain.SaUserInfo"
+		resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from SA_USER_INFO
+		where status = '1'
+		<if test="account != null">
+			account = #{account,jdbcType=VARCHAR}
+		</if>
+		<if test="password != null">
+			and password = #{password,jdbcType=VARCHAR}
+		</if>
+		<if test="description != null">
+			and description = #{description,jdbcType=VARCHAR}
+		</if>
+		<if test="userName != null">
+			and userName = #{userName,jdbcType=VARCHAR}
+		</if>
+	</select>
+</mapper>

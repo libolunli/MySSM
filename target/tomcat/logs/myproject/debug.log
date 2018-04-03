@@ -1,0 +1,134 @@
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed mapper file: 'file [G:\Code\MyProject\target\classes\mappers\SaCodeNameMapper.xml]'
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed mapper file: 'file [G:\Code\MyProject\target\classes\mappers\SaMainAccordionMapper.xml]'
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed mapper file: 'file [G:\Code\MyProject\target\classes\mappers\SaUserInfoMapper.xml]'
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed mapper file: 'file [G:\Code\MyProject\target\classes\mappers\SqlUtil.xml]'
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [G:\Code\MyProject\target\classes\com\myproject\datasource\dao\SaCodeNameMapper.class]
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [G:\Code\MyProject\target\classes\com\myproject\datasource\dao\SaMainAccordionMapper.class]
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [G:\Code\MyProject\target\classes\com\myproject\datasource\dao\SaUserInfoMapper.class]
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'saCodeNameMapper' and 'com.myproject.datasource.dao.SaCodeNameMapper' mapperInterface
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'saMainAccordionMapper' and 'com.myproject.datasource.dao.SaMainAccordionMapper' mapperInterface
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'saUserInfoMapper' and 'com.myproject.datasource.dao.SaUserInfoMapper' mapperInterface
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationFactory  - Configuring ehcache from InputStream
+[2018-04-02 19:48:33] [WARN ] [localhost-startStop-1] net.sf.ehcache.config.CacheConfiguration  - Cache 'CACHEINFO' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'CACHEINFO' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.CacheManager  - Creating new CacheManager with Configuration Object
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.util.PropertyUtil  - propertiesString is null.
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationHelper  - No CacheManagerEventListenerFactory class specified. Skipping...
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.Cache  - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.Cache  - CacheWriter factory not configured. Skipping...
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationHelper  - No CacheExceptionHandlerFactory class specified. Skipping...
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.store.MemoryStore  - Initialized net.sf.ehcache.store.MemoryStore for CACHEINFO
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: REMOTE_SIZE
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: OFFHEAP_GET
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: OFFHEAP_PUT
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: OFFHEAP_REMOVE
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: DISK_GET
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: DISK_PUT
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: DISK_REMOVE
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: XA_COMMIT
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: XA_ROLLBACK
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: XA_RECOVERY
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: CLUSTER_EVENT
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: NONSTOP
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.Cache  - Initialised cache: CACHEINFO
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationHelper  - CacheDecoratorFactory not configured. Skipping for 'CACHEINFO'.
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationHelper  - CacheDecoratorFactory not configured for defaultCache. Skipping for 'CACHEINFO'.
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] net.sf.ehcache.CacheManager  - Attempting to create an existing singleton. Existing singleton returned.
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Creating a new SqlSession
+[2018-04-02 19:48:33] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27017d81] was not registered for synchronization because synchronization is not active
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.transaction.SpringManagedTransaction  - JDBC Connection [com.mysql.jdbc.JDBC4Connection@9138e9b] will not be managed by Spring
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@9138e9b]
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==>  Preparing: select * from SA_CODE_NAME where status = '1' 
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==> Parameters: 
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - <==      Total: 3
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27017d81]
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Creating a new SqlSession
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1952b58b] was not registered for synchronization because synchronization is not active
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.transaction.SpringManagedTransaction  - JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a2fa705] will not be managed by Spring
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@3a2fa705]
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==>  Preparing: select * from SA_USER_INFO where status = '1' 
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==> Parameters: 
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - <==      Total: 1
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1952b58b]
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Creating a new SqlSession
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fa59303] was not registered for synchronization because synchronization is not active
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.transaction.SpringManagedTransaction  - JDBC Connection [com.mysql.jdbc.JDBC4Connection@34347b6e] will not be managed by Spring
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@34347b6e]
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==>  Preparing: select * from SA_MAIN_ACCORDION where status = '1' 
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==> Parameters: 
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - <==      Total: 2
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fa59303]
+[2018-04-02 19:48:34] [DEBUG] [localhost-startStop-1] net.sf.ehcache.CacheManager  - Attempting to create an existing singleton. Existing singleton returned.
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed mapper file: 'file [G:\Code\MyProject\target\classes\mappers\SaCodeNameMapper.xml]'
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed mapper file: 'file [G:\Code\MyProject\target\classes\mappers\SaMainAccordionMapper.xml]'
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed mapper file: 'file [G:\Code\MyProject\target\classes\mappers\SaUserInfoMapper.xml]'
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionFactoryBean  - Parsed mapper file: 'file [G:\Code\MyProject\target\classes\mappers\SqlUtil.xml]'
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [G:\Code\MyProject\target\classes\com\myproject\datasource\dao\SaCodeNameMapper.class]
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [G:\Code\MyProject\target\classes\com\myproject\datasource\dao\SaMainAccordionMapper.class]
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Identified candidate component class: file [G:\Code\MyProject\target\classes\com\myproject\datasource\dao\SaUserInfoMapper.class]
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'saCodeNameMapper' and 'com.myproject.datasource.dao.SaCodeNameMapper' mapperInterface
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'saMainAccordionMapper' and 'com.myproject.datasource.dao.SaMainAccordionMapper' mapperInterface
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] org.mybatis.spring.mapper.ClassPathMapperScanner  - Creating MapperFactoryBean with name 'saUserInfoMapper' and 'com.myproject.datasource.dao.SaUserInfoMapper' mapperInterface
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationFactory  - Configuring ehcache from InputStream
+[2018-04-02 19:48:47] [WARN ] [localhost-startStop-1] net.sf.ehcache.config.CacheConfiguration  - Cache 'CACHEINFO' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'CACHEINFO' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.CacheManager  - Creating new CacheManager with Configuration Object
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.util.PropertyUtil  - propertiesString is null.
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationHelper  - No CacheManagerEventListenerFactory class specified. Skipping...
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.Cache  - No BootstrapCacheLoaderFactory class specified. Skipping...
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.Cache  - CacheWriter factory not configured. Skipping...
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationHelper  - No CacheExceptionHandlerFactory class specified. Skipping...
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.store.MemoryStore  - Initialized net.sf.ehcache.store.MemoryStore for CACHEINFO
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: REMOTE_SIZE
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: OFFHEAP_GET
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: OFFHEAP_PUT
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: OFFHEAP_REMOVE
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: DISK_GET
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: DISK_PUT
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: DISK_REMOVE
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: XA_COMMIT
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: XA_ROLLBACK
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: XA_RECOVERY
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: CLUSTER_EVENT
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl  - Mocking Operation Statistic: NONSTOP
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.Cache  - Initialised cache: CACHEINFO
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationHelper  - CacheDecoratorFactory not configured. Skipping for 'CACHEINFO'.
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.config.ConfigurationHelper  - CacheDecoratorFactory not configured for defaultCache. Skipping for 'CACHEINFO'.
+[2018-04-02 19:48:47] [DEBUG] [localhost-startStop-1] net.sf.ehcache.CacheManager  - Attempting to create an existing singleton. Existing singleton returned.
+[2018-04-02 19:48:48] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Creating a new SqlSession
+[2018-04-02 19:48:48] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64faabf0] was not registered for synchronization because synchronization is not active
+[2018-04-02 19:48:53] [DEBUG] [localhost-startStop-1] org.mybatis.spring.transaction.SpringManagedTransaction  - JDBC Connection [com.mysql.jdbc.JDBC4Connection@10d1443d] will not be managed by Spring
+[2018-04-02 19:48:53] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@10d1443d]
+[2018-04-02 19:48:53] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==>  Preparing: select * from SA_CODE_NAME where status = '1' 
+[2018-04-02 19:48:53] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==> Parameters: 
+[2018-04-02 19:48:53] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - <==      Total: 3
+[2018-04-02 19:48:53] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@64faabf0]
+[2018-04-02 19:48:53] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Creating a new SqlSession
+[2018-04-02 19:48:53] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1738679c] was not registered for synchronization because synchronization is not active
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] org.mybatis.spring.transaction.SpringManagedTransaction  - JDBC Connection [com.mysql.jdbc.JDBC4Connection@21ac2f8d] will not be managed by Spring
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@21ac2f8d]
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==>  Preparing: select * from SA_USER_INFO where status = '1' 
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==> Parameters: 
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - <==      Total: 1
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1738679c]
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Creating a new SqlSession
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43d950a3] was not registered for synchronization because synchronization is not active
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] org.mybatis.spring.transaction.SpringManagedTransaction  - JDBC Connection [com.mysql.jdbc.JDBC4Connection@14c5de92] will not be managed by Spring
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ooo Using Connection [com.mysql.jdbc.JDBC4Connection@14c5de92]
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==>  Preparing: select * from SA_MAIN_ACCORDION where status = '1' 
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - ==> Parameters: 
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] SqlUtil.sql  - <==      Total: 2
+[2018-04-02 19:48:56] [DEBUG] [localhost-startStop-1] org.mybatis.spring.SqlSessionUtils  - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43d950a3]
+[2018-04-02 19:48:57] [DEBUG] [localhost-startStop-1] net.sf.ehcache.CacheManager  - Attempting to create an existing singleton. Existing singleton returned.

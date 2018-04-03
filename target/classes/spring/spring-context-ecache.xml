@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd 
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd 
+        http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+	<!-- 启用缓存注解功能，这个是必须的，否则注解不会生效，另外，该注解一定要声明在spring主配置文件中才会生效 -->
+    <cache:annotation-driven cache-manager="cacheManager" />
+    <!-- cacheManager工厂类，指定ehcache.xml的位置 -->
+    <bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"
+        p:config-location="classpath:cache/ehcache.xml"
+        p:shared="true"
+         />
+    <!-- 声明cacheManager -->
+    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager"
+        p:cache-manager-ref="ehcache" />
+	
+	<bean id="SA_CODE_NAME_CACHE" class="com.myproject.pub.cache.po.CacheConfigInfo">
+		<property name="name" value="SA_CODE_NAME"/>
+		<property name="description" value="字典表"/>
+		<property name="sql">
+			<value>select * from SA_CODE_NAME where status = '1'</value>
+		</property>
+		<property name="cacheConfigTempleList">
+			<list>
+				<bean id="cacheConfigTemple" class="com.myproject.pub.cache.po.CacheConfigTemple">
+					<property name="key" value="CODETYPE"/>
+					<property name="valueType" value="List"/>
+					<property name="clazz" value="com.myproject.datasource.domain.SaCodeName"/>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="SA_USER_INFO_CACHE" class="com.myproject.pub.cache.po.CacheConfigInfo">
+		<property name="name" value="SA_USER_INFO"/>
+		<property name="description" value="用户信息表"/>
+		<property name="sql">
+			<value>select * from SA_USER_INFO where status = '1'</value>
+		</property>
+		<property name="cacheConfigTempleList">
+			<list>
+				<!-- 注：key不能完全一样 -->
+				<!-- <bean id="cacheConfigTemple1" class="com.myproject.pub.cache.po.CacheConfigTemple">
+					<property name="key" value="ACCOUNT,PASSWORD"/>
+					<property name="valueType" value="Map"/>
+				</bean> -->
+				<bean id="cacheConfigTemple2" class="com.myproject.pub.cache.po.CacheConfigTemple">
+					<property name="key" value="ACCOUNT,PASSWORD"/>
+					<property name="valueType" value="Map"/>
+					<property name="clazz" value="com.myproject.datasource.domain.SaUserInfo"></property>
+				</bean>
+				<bean id="cacheConfigTemple3" class="com.myproject.pub.cache.po.CacheConfigTemple">
+					<property name="key" value="ACCOUNT"/>
+					<property name="valueType" value="List"/>
+					<property name="clazz" value="com.myproject.datasource.domain.SaUserInfo"></property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="SA_MAIN_ACCORDION_CACHE" class="com.myproject.pub.cache.po.CacheConfigInfo">
+		<property name="name" value="SA_MAIN_ACCORDION"/>
+		<property name="description" value="主页tab表"/>
+		<property name="sql">
+			<value>select * from SA_MAIN_ACCORDION where status = '1'</value>
+		</property>
+		<property name="cacheConfigTempleList">
+			<list>
+				<bean id="cacheConfigTemple3" class="com.myproject.pub.cache.po.CacheConfigTemple">
+					<property name="key" value="AUTH"/>
+					<property name="valueType" value="List"/>
+					<property name="clazz" value="com.myproject.datasource.domain.SaMainAccordion"></property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="cacheConfigManager" class="com.myproject.pub.cache.po.CacheConfigManager">
+		<property name="cacheTempleList" >
+			<list>
+				<ref bean="SA_CODE_NAME_CACHE" />
+				<ref bean="SA_USER_INFO_CACHE"/>
+				<ref bean="SA_MAIN_ACCORDION_CACHE"/>
+			</list>
+		</property>
+	</bean>
+	
+</beans>
